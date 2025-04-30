@@ -15,10 +15,15 @@ header{
 nav a{
     padding: 10px 25px;
     text-decoration: none;
-    color: red;
+    color: aliceblue;
+    border-radius: 20px;
+}
+nav a:hover{
+    background-color: rgb(0, 5, 77);
+    transition: 0.5s;
 }
 section.home{
-    background: url("https://awsimages.detik.net.id/community/media/visual/2022/04/27/ilustrasi-restoran-1_169.jpeg?w=1200");
+    background: url("Restoran-la-Finca-Bali-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,17 +32,21 @@ section.home{
 }
 section.home div{
     text-align: center;
-    color: azure;
+    color: rgb(0, 5, 77);
     margin: auto;
     width: 70%;
     padding: 20px;
     font-size: large;
 }
+section.home div a:hover{
+    background-color: rgb(117, 124, 216);
+    transition: 0.5s;
+}
 section.home .welcome{
     font-size: 30px;
 }
 section.home a{
-    color:orangered;
+    color:rgb(0, 5, 77);
     padding: 10px 20px;
     text-decoration: none;
     box-shadow: 0px 0px 3px;
@@ -60,7 +69,7 @@ section.about img{
     height: 200px;
 }
 section.product{
-    background: url("");
+    background: url("af428c9b-19ca-4195-b017-aac94333c4d8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,8 +79,10 @@ section.product .container{
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
-    background: url("https://cdns.klimg.com/kapanlagi.com/p/restaurant237060_1920.jpg");
     height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 section.product .container .card{
     background-color: white;
@@ -80,8 +91,19 @@ section.product .container .card{
     width: 200px;
     height: 500px;
     margin: 15px;
+    border-radius: 20px;
+}
+.card a:hover{
+    background-color: rgb(0, 82, 177);
+    transition: 0.5s;
+}
+.card:hover{
+    animation: goyang 0.5s;
+    background-color: rgb(0, 82, 177);
+    transition: 0.5s;
 }
 section.product .container .card img{
+    border-radius: 20px;
     width: 100%;
     height: 200px;
 }
@@ -93,21 +115,21 @@ section.product .container .card a{
     border-radius: 20px;
 }
 section.contact{
-    background-color:rgb(219, 124, 14);
+    background-color:rgb(250, 190, 99);
     height: 600px;
 }
 section.contact .card {
     margin: auto;
-    color:brown;
+    color:rgb(207, 17, 17);
     text-align: center;
     padding-top: 100px;
     width: 400px;
 }
 section.contact .card img{
-    width: 200px;
+    width: 400px;
 }
 footer{
-    background-color:green;
+    background-color:rgb(250, 190, 99);
     height: 50px;
 }
 footer .medsos{
@@ -115,7 +137,24 @@ footer .medsos{
     padding-top: 10px;
 }
 footer .medsos a{
-    color:azure;
+    color:rgb(37, 112, 18);
     font-size: 20px;
     padding: 5px 20px;
+}
+@keyframes goyang{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg)
+    }
+    75%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg)
+    }
 }
